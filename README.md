@@ -200,51 +200,6 @@ motto: "Building the future with AI & Code"
   </picture>
 </div>
 
-### ⚙️ Snake not showing? Set up the GitHub Action below ⬇️
-
-<details>
-<summary>🐍 Click here for Snake Animation Setup</summary>
-
-<br/>
-
-Create `.github/workflows/snake.yml` in your `iawaisahmd` repo:
-
-```yaml
-name: Generate Snake Animation
-
-on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-Then go to **Actions** tab → **Generate Snake Animation** → **Run workflow**
-
-</details>
-
 ---
 
 ## 🚀 Featured Projects
