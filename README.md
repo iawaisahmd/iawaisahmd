@@ -305,10 +305,6 @@ motto: "Building the future with AI & Code"
 
 **If you find my projects useful, consider giving them a ⭐**
 
-<a href="https://www.buymeacoffee.com/iawaisahmd" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="50"/>
-</a>
-
 </div>
 
 ---
